@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hero Video Demo</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+
+  <header class="hero-header">
+    <video
+      class="hero-video"
+      autoplay
+      muted
+      loop
+      playsinline
+      poster="https://via.placeholder.com/1280x720.jpg?text=Video+Loading"
+      id="heroVideo"
+    >
+      <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <div class="hero-content">
+      <h1>Welcome to the Demo</h1>
+      <p>Play and pause the background video</p>
+      <button class="video-toggle" id="videoToggle" aria-label="Pause video">⏸️</button>
+    </div>
+  </header>
+
+  <script src="./main.js"></script>
+</body>
+</html>
